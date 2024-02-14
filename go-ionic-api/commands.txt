@@ -1,0 +1,5 @@
+Run these for docker
+
+1. docker compose up go_db
+2. docker compose build
+3. docker compose up ionic-ng-go-app
