@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/standalone';
+import { IonAvatar, IonChip, IonHeader, IonLabel, IonIcon, IonToolbar, IonTitle, IonContent } from '@ionic/angular/standalone';
+import { addIcons } from 'ionicons';
+import { ellipsisVerticalOutline } from 'ionicons/icons';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent],
+  imports: [IonAvatar, IonChip, IonHeader, IonLabel, IonIcon, IonToolbar, IonTitle, IonContent],
 })
 export class HomePage {
-  constructor() {}
+  constructor() {
+    addIcons({ ellipsisVerticalOutline })
+  }
 }
